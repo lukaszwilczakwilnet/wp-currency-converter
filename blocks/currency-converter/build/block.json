@@ -1,0 +1,59 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "wilnet/currency-converter",
+  "version": "0.1.0",
+  "title": "Currency Converter",
+  "category": "widgets",
+  "icon": "money-alt",
+  "description": "This block gives shows currency converter on your page",
+  "supports": {
+    "html": false,
+    "typography": {
+      "fontSize": true
+    }
+  },
+  "textdomain": "currency-converter",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "currencies": {
+      "type": "array",
+      "default": []
+    },
+    "default_currency_top": {
+      "type": "string",
+      "default": ""
+    },
+    "default_currency_bottom": {
+      "type": "string",
+      "default": ""
+    },
+    "selectField": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string",
+      "source": "text",
+      "selector": "div",
+      "default": ""
+    },
+    "bg_color": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "text_color": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "style": {
+      "type": "object",
+      "default": {
+        "typography": {
+          "fontSize": "28px"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+	"name": "currency-converter",
+	"version": "0.1.0",
+	"description": "Example block scaffolded with Create Block tool.",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build src/index.js src/scripts/frontend.js",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start src/index.js src/scripts/frontend.js"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^26.6.0",
+		"prettier": "^2.8.8"
+	},
+	"dependencies": {
+		"@codeamp/block-components": "0.0.1-beta.9",
+		"@emotion/react": "^11.11.1",
+		"@emotion/styled": "^11.11.0",
+		"@mui/material": "^5.13.6"
+	}
+}
