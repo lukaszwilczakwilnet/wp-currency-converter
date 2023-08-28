@@ -17,29 +17,29 @@ This plugin still has a few things that can be improved, but I decided to show i
 #### PHP in the context of WordPress, ideally a plugin
 
 * This is a WordPress plugin
-* Using a few types of hooks, actions, and filters [ex. here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/vvvvvvv/includes/Currency_Converter.php#L146)
-* Settings API - settings page for the plugin [here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/vvvvvvv/admin/Currency_Converter_Admin.php#L79)
-* WordPress transients - keep data in a cache [here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/vvvvvvv/data/Currency_Converter_Data.php#L48)
-* REST API custom endpoints - additional endpoints to return data and options [ex. here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/vvvvvvv/rest-api/Currency_Converter_Rest_Api.php#L54)
-* apply_filter - add the possibility to change plugin settings by using filters, in our case change cache time [here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/vvvvvvv/data/Currency_Converter_Data.php#L106)
-* settings saved in WordPress options [here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/vvvvvvv/data/Currency_Converter_Data.php#L52)
+* Using a few types of hooks, actions, and filters [ex. here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/a80f9135cf3553c064ed5d84707d7f67923e1a3c/includes/Currency_Converter.php#L146)
+* Settings API - settings page for the plugin [here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/a80f9135cf3553c064ed5d84707d7f67923e1a3c/admin/Currency_Converter_Admin.php#L79)
+* WordPress transients - keep data in a cache [here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/a80f9135cf3553c064ed5d84707d7f67923e1a3c/data/Currency_Converter_Data.php#L48)
+* REST API custom endpoints - additional endpoints to return data and options [ex. here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/a80f9135cf3553c064ed5d84707d7f67923e1a3c/rest-api/Currency_Converter_Rest_Api.php#L54)
+* apply_filter - add the possibility to change plugin settings by using filters, in our case change cache time [here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/a80f9135cf3553c064ed5d84707d7f67923e1a3c/data/Currency_Converter_Data.php#L106)
+* settings saved in WordPress options [here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/a80f9135cf3553c064ed5d84707d7f67923e1a3c/data/Currency_Converter_Data.php#L52)
 
 #### Gutenberg block(s)
 
-* Currency Converter block - dynamic block [here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/vvvvvvv/blocks/Currency_Converter_Blocks.php#L59)
-* Save data in block attributes [here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/vvvvvvv/blocks/currency-converter/src/edit.js#L36)
-* Using Supports [here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/vvvvvvv/blocks/currency-converter/src/block.json#L10)
-* Block in Content Canvas [here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/vvvvvvv/blocks/currency-converter/src/edit.js#L62)
-* Using Settings Sidebar [here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/vvvvvvv/blocks/currency-converter/src/edit.js#L64C8-L64C8)
-* Using callback to create a frontend user-facing view of the block [here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/vvvvvvv/blocks/Currency_Converter_Blocks.php#L62)
+* Currency Converter block - dynamic block [here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/a80f9135cf3553c064ed5d84707d7f67923e1a3c/blocks/Currency_Converter_Blocks.php#L59)
+* Save data in block attributes [here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/a80f9135cf3553c064ed5d84707d7f67923e1a3c/blocks/currency-converter/src/edit.js#L36)
+* Using Supports [here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/a80f9135cf3553c064ed5d84707d7f67923e1a3c/blocks/currency-converter/src/block.json#L10)
+* Block in Content Canvas [here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/a80f9135cf3553c064ed5d84707d7f67923e1a3c/blocks/currency-converter/src/edit.js#L62)
+* Using Settings Sidebar [here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/a80f9135cf3553c064ed5d84707d7f67923e1a3c/blocks/currency-converter/src/edit.js#L64C8-L64C8)
+* Using callback to create a frontend user-facing view of the block [here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/a80f9135cf3553c064ed5d84707d7f67923e1a3c/blocks/Currency_Converter_Blocks.php#L62)
 
 #### Meaningful React Code - (Data Fetching, State Management, Complex components, React Hooks)
 
-* User-facing part of Gutenberg block using React [here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/vvvvvvv/blocks/currency-converter/Currency_Converter_Renderer.php#L57)
-* Fetching data from WordPress REST API [ex. here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/vvvvvvv/blocks/currency-converter/src/scripts/frontend.js#L28C15-L28C15)
-* Create my own components [ex. here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/vvvvvvv/blocks/currency-converter/src/scripts/selector.js#L5)
-* Using states and passing them between components [ex. here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/vvvvvvv/blocks/currency-converter/src/scripts/frontend.js#L20)
-* Using React hooks [ex. here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/vvvvvvv/blocks/currency-converter/src/scripts/frontend.js#L27)
+* User-facing part of Gutenberg block using React [here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/a80f9135cf3553c064ed5d84707d7f67923e1a3c/blocks/currency-converter/Currency_Converter_Renderer.php#L57)
+* Fetching data from WordPress REST API [ex. here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/a80f9135cf3553c064ed5d84707d7f67923e1a3c/blocks/currency-converter/src/scripts/frontend.js#L28C15-L28C15)
+* Create my own components [ex. here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/a80f9135cf3553c064ed5d84707d7f67923e1a3c/blocks/currency-converter/src/scripts/selector.js#L5)
+* Using states and passing them between components [ex. here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/a80f9135cf3553c064ed5d84707d7f67923e1a3c/blocks/currency-converter/src/scripts/frontend.js#L20)
+* Using React hooks [ex. here](https://github.com/lukaszwilczakwilnet/wp-currency-converter/blob/a80f9135cf3553c064ed5d84707d7f67923e1a3c/blocks/currency-converter/src/scripts/frontend.js#L27)
 
 
 
