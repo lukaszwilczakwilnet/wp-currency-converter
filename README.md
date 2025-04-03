@@ -47,11 +47,11 @@ This plugin still has a few things that can be improved, but I decided to show i
 
 ## Demo
 
-ULR: https://currency-converter.wilnet.com.pl/
+ULR: https://currency-converter.wilnet.stronazen.pl/
 
 ### Login details
 
-**Admin:** https://currency-converter.wilnet.com.pl/wp-admin
+**Admin:** https://currency-converter.wilnet.stronazen.pl/wp-admin
 
 **Login:** demo
 
