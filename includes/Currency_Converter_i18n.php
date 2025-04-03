@@ -1,4 +1,9 @@
 <?php
+/**
+ * Schema Class
+ *
+ * @package Currency_Converter
+ */
 
 namespace Wilnet\Currency_Converter;
 
@@ -26,22 +31,19 @@ namespace Wilnet\Currency_Converter;
  * @subpackage Currency_Converter/includes
  * @author     Lukasz Wilczak <lukasz@wilczak.net.pl>
  */
-class Currency_Converter_i18n
-{
-    /**
-     * @since    1.0.0
-     */
-    public function load_plugin_textdomain()
-    {
+class Currency_Converter_I18n {
 
-        load_plugin_textdomain(
-            'currency-converter',
-            false,
-            dirname(dirname(plugin_basename(__FILE__))) . '/languages/'
-        );
+	/**
+	 * Loads textdomain
+	 *
+	 * @since    1.0.0
+	 */
+	public function load_plugin_textdomain() {
 
-    }
-
-
-
+		load_plugin_textdomain(
+			'currency-converter',
+			false,
+			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
+		);
+	}
 }

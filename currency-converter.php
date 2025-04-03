@@ -1,8 +1,6 @@
 <?php
-
-namespace Wilnet\Currency_Converter;
-
 /**
+ * Initialize plugin
  *
  * @link              https://wilnet.eu
  * @since             1.0.0
@@ -21,12 +19,13 @@ namespace Wilnet\Currency_Converter;
  * Domain Path:       /languages
  */
 
+namespace Wilnet\Currency_Converter;
 
-if (! defined('WPINC')) {
-    die;
+if ( ! defined( 'WPINC' ) ) {
+	die;
 }
 
-require plugin_dir_path(__FILE__) . 'includes/Currency_Converter.php';
+require plugin_dir_path( __FILE__ ) . 'includes/Currency_Converter.php';
 
 $plugin = new Currency_Converter();
 $plugin->run();
